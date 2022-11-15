@@ -14,28 +14,35 @@
 <body>
     <div class="app">
         <form name="calculadora">
-            <input type="textfield" name="ans" value="" autocomplete="off" readonly>
+            <div class="pantalla">
+                <input type="textfield" name="ans" value="" autocomplete="off" readonly>
+            </div>
+            
 
-            <input type="button" value="7" onclick="document.calculadora.ans.value+='7'">
-            <input type="button" value="8" onclick="document.calculadora.ans.value+='8'">
-            <input type="button" value="9" onclick="document.calculadora.ans.value+='9'">
-            <input type="button" value="+" onclick="document.calculadora.ans.value+='+'">
-            <br>
-            <input type="button" value="4" onclick="document.calculadora.ans.value+='4'">
-            <input type="button" value="5" onclick="document.calculadora.ans.value+='5'">
-            <input type="button" value="6" onclick="document.calculadora.ans.value+='6'">
-            <input type="button" value="-" onclick="document.calculadora.ans.value+='-'">
-            <br>
-            <input type="button" value="1" onclick="document.calculadora.ans.value+='1'">
-            <input type="button" value="2" onclick="document.calculadora.ans.value+='2'">
-            <input type="button" value="3" onclick="document.calculadora.ans.value+='3'">
-            <input type="button" value="X" onclick="document.calculadora.ans.value+='*'">
-            <br>
-            <input type="button" value="0" onclick="document.calculadora.ans.value+='0'">
-            <input type="reset" value="C">
-            <input type="button" value="=" onclick="document.calculadora.ans.value=eval(document.calculadora.ans.value)">
-            <input type="button" value="/" onclick="document.calculadora.ans.value+='/'">
-            <br>
+            <div class="botones">
+                <input type="button" value="7" onclick="document.calculadora.ans.value+='7'">
+                <input type="button" value="8" onclick="document.calculadora.ans.value+='8'">
+                <input type="button" value="9" onclick="document.calculadora.ans.value+='9'">
+                <input type="button" value="+" onclick="document.calculadora.ans.value+='+'" class="color">
+                <br>
+                <input type="button" value="4" onclick="document.calculadora.ans.value+='4'">
+                <input type="button" value="5" onclick="document.calculadora.ans.value+='5'">
+                <input type="button" value="6" onclick="document.calculadora.ans.value+='6'">
+                <input type="button" value="-" onclick="document.calculadora.ans.value+='-'" class="color">
+                <br>
+                <input type="button" value="1" onclick="document.calculadora.ans.value+='1'">
+                <input type="button" value="2" onclick="document.calculadora.ans.value+='2'">
+                <input type="button" value="3" onclick="document.calculadora.ans.value+='3'">
+                <input type="button" value="X" onclick="document.calculadora.ans.value+='*'" class="color">
+                <br>
+                <input type="button" value="0" onclick="document.calculadora.ans.value+='0'">
+                <input type="reset" value="C" class="color">
+                <input type="button" value="="
+                    onclick="document.calculadora.ans.value=eval(document.calculadora.ans.value)">
+                <input type="button" value="/" onclick="document.calculadora.ans.value+='/'" class="color">
+                <br>
+            </div>
+
         </form>
     </div>
 </body>
